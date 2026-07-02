@@ -17,7 +17,7 @@ Deno.serve(async (req) => {
       'Content-Type': 'application/json'
     },
     body: JSON.stringify({
-      text: body.text,
+     text: [body.text],
       source_lang: body.source_lang,
       target_lang: body.target_lang
     })
